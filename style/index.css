@@ -16,14 +16,16 @@ section{
 }
 footer{
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   background-color: #252525;
   box-sizing: border-box;
   padding: 70px 0px;
   border-radius: 15px 15px 0 0;
   color: #6B6B6B;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap:40px;
+  align-items: center;
 }
 .footer-logo{
   margin-bottom: 40px;
@@ -45,6 +47,24 @@ footer h1{
   gap:12px;
   display: flex;
 }
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer-copyright ul{
+  display: flex;
+  flex-direction: row;
+  gap:60px;
+}
+footer ul li:hover{
+  color: #C71B35;
+  transition: color 0.25s ease-in-out;
+}
+
+
+
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
