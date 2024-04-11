@@ -37,6 +37,7 @@ footer ul{
   list-style: none;
   margin:0;
   padding: 0;
+  cursor:pointer;
 }
 footer h1{
   margin:0;
@@ -58,10 +59,24 @@ footer h1{
   gap:60px;
 }
 footer ul li:hover{
-  color: #C71B35;
+  color: #fff;
   transition: color 0.25s ease-in-out;
 }
 
+@media(max-width:425px){
+  .follow-us span, .follow-us h1 {
+    display: none;
+  }
+  .follow-us ul{
+    flex-direction: row
+  }
+  .footer-language h1{
+    visibility: hidden;
+  }
+  .footer-copyright{
+    display: none;
+  }
+}
 
 
 
