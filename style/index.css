@@ -67,6 +67,9 @@ footer ul li:hover{
   footer{
     height: auto;
   }
+  footer ul{
+    cursor: none;
+  }
   .footer-content{
     display: grid;
     grid-template-areas: 
