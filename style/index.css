@@ -64,22 +64,40 @@ footer ul li:hover{
 }
 
 @media(max-width:425px){
+  footer{
+    height: auto;
+  }
+  .footer-content{
+    display: grid;
+    grid-template-areas: 
+    'page language'
+    'copyright copyright'
+    ;
+    row-gap: 50px;
+  }
+  .follow-us{
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+  }
   .follow-us span, .follow-us h1 {
     display: none;
   }
   .follow-us ul{
-    flex-direction: row
+    flex-direction: row;
+    gap:40px;
   }
   .footer-language h1{
     visibility: hidden;
   }
-  .footer-copyright{
-    display: none;
+  .footer-copyright ul{
+    margin-top: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+    font-size: 0.7rem;
   }
 }
-
-
-
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
